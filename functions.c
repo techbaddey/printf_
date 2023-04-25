@@ -102,7 +102,7 @@ int print_percent(va_list types, char buffer[],
  * print_int - Print int
  * @types: Lista of arguments
  * @buffer: Buffer array to handle print
- * @flags:  Calculates active flags
+ * @flags: Calculates active flags
  * @width: get width.
  * @precision: Precision specification
  * @size: Size specifier

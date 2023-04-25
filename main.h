@@ -54,6 +54,10 @@ int handle_print(const char *fmt, int *i,
 // Amir Functions //
 int parse_format(const char *format, format_t get_opt[], va_list valist);
 
+// functions for handling string and char
+int set_string(va_list valist);
+int set_char(va_list valist);
+
 /****************** FUNCTIONS ******************/
 
 /* Funtions to print chars and strings */

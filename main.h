@@ -44,6 +44,9 @@ int _printf(const char *format, ...);
 int handle_print(const char *fmt, int *i,
 				 va_list list, char buffer[], int flags, int width, int precision, int size);
 
+// Amir Functions //
+int parse_format(const char *format, format_t get_opt[], va_list valist);
+
 /****************** FUNCTIONS ******************/
 
 /* Funtions to print chars and strings */

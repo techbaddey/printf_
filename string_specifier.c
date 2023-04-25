@@ -8,23 +8,23 @@
  */
 int set_string(va_list valist)
 {
-    int i = 0;
-    char *s;
+	int i = 0;
+	char *s;
 
-    s = va_arg(valist, char *);
+	s = va_arg(valist, char *);
 
-    if (s == NULL)
-    {
-        s = "(null)";
-    }
+	if (s == NULL)
+	{
+		s = "(null)";
+	}
 
-    while (s[i] != "\0")
-    {
-        _putchar(s[i]);
-        i++;
-    }
+	while (s[i] != "\0")
+	{
+		_putchar(s[i]);
+		i++;
+	}
 
-    return (i);
+	return (i);
 }
 
 /**
@@ -34,6 +34,6 @@ int set_string(va_list valist)
  */
 int set_char(va_list valist)
 {
-    _putchar(va_arg(valist, int));
-    return (1);
+	_putchar(va_arg(valist, int));
+	return (1);
 }

@@ -17,6 +17,7 @@ int _printf(const char *format, ...)
 	format_t get_opt[] = {
 		{"c", set_char},
 		{"s", set_string},
+		{"%", print_percent},
 		{NULL, NULL}};
 
 	if (!format)

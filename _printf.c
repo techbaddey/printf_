@@ -15,9 +15,9 @@ int _printf(const char *format, ...)
 	// we will put the other format specifier later on
 
 	format_t get_opt[] = {
-		{"c", print_char},
-		{"s", print_string},
-		{NULL, NULL}};
+	    {"c", print_char},
+	    {"s", print_string},
+	    {NULL, NULL}};
 
 	if (!format)
 	{
@@ -29,7 +29,7 @@ int _printf(const char *format, ...)
 	// we need to make the handle_print function here but i dont know how to implement it exactly also,
 	// I dont get your function signature // plzz explain it to me <3
 
-	count = ; // handle_print()
+	count = parse_format(format, get_opt, ap); // handle_print()
 
 	va_end(ap);
 

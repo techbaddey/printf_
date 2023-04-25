@@ -32,6 +32,13 @@ typedef struct format
 	int (*fn)(va_list, char[], int, int, int, int);
 } format_t;
 
+// Amir Struct
+typedef struct format
+{
+	char *opt;
+	int (*call_fun)();
+} format_t;
+
 /**
  * typedef struct fmt fmt_t - Struct op
  *

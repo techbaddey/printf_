@@ -15,8 +15,8 @@ int _printf(const char *format, ...)
 	// we will put the other format specifier later on
 
 	format_t get_opt[] = {
-	    {"c", print_char},
-	    {"s", print_string},
+	    {"c", set_char},
+	    {"s", set_string},
 	    {NULL, NULL}};
 
 	if (!format)

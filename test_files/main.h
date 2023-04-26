@@ -18,44 +18,27 @@
 #define S_LONG 2
 #define S_SHORT 1
 
-// we better name it format , better than fmt // Amir // I feel like it would be better
-
-/**s
- * struct fmt - Struct op
+/**
+ * typedef struct fmt fmt_t - Struct op
  *
- * @fmt: The format.
- * @fn: The function associated.
+ * @format: The format.
+ * @format_t: The function associated.
  */
-typedef struct format
-{
-	char *opt;
-	int (*fn)(va_list, char[], int, int, int, int);
-} format_t;
-
-// Amir Struct
 typedef struct format
 {
 	char *opt;
 	int (*call_fun)();
 } format_t;
 
-/**
- * typedef struct fmt fmt_t - Struct op
- *
- * @fmt: The format.
- * @fm_t: The function associated.
- */
-typedef struct fmt fmt_t; // I feel like no need for this here?? // Amir
+typedef struct fmt fmt_t;
 
 int _printf(const char *format, ...);
 int handle_print(const char *fmt, int *i,
 				 va_list list, char buffer[], int flags, int width, int precision, int size);
 
-// Amir Functions //
 int parse_format(const char *format, format_t get_opt[], va_list valist);
 int print_percent(__attribute__((unused)) va_list valist);
 
-// functions for handling string and char
 int set_string(va_list valist);
 int set_char(va_list valist);
 
